@@ -1,0 +1,340 @@
+
+	body{
+		font-family: 'Bree Serif', serif;
+		margin-top:0;
+		margin-bottom:0;
+		
+	}
+	
+	
+	.navigation-bar{
+		display:flex;
+		align-items:center;
+		position:fixed;
+		top:0;
+		left: 0;
+		right: 0;
+		
+	}
+	
+	.navigation-bar::before{
+		content: "";
+		background-color: rgba(0, 0, 0, 0.7);
+		position: absolute;
+		top:0;
+		left: 0;
+		right: 0;
+		height: 100%;
+		width: 100%;
+		z-index: -1;
+
+	}
+
+	ul{
+		display:flex;
+		list-style-type:none;
+		
+	}
+	
+	li a{
+		display:block;
+		padding:10px 20px;
+		text-decoration:none;
+		color:white;
+		font-size:24px;
+		transition:background-color 0.5s;
+		border-radius:20px;
+		margin-left:20px;
+		
+	}
+	li a:hover{
+		background-color:white;
+		color:black;
+		
+	}
+	
+	.profile-photo{
+		height:55px;
+		margin-left:40px;
+		margin-top:10px;
+	}
+
+	#home-page{
+
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		padding:10px 20px;
+		height: 500px;
+
+	}
+	#home-page::before{
+		content: "";
+		background-image: url("assets/bg1.jpg");
+		background-repeat: no-repeat;
+		background-size: 100% 85%;
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		height: 775px;
+		width: 100%;
+		z-index: -1;
+		
+	}
+	
+	.welcome-heading{
+		font-size: 40px;
+		padding: 10px;
+		color:white;
+		margin-top: 200px;
+		margin-bottom: 5px;
+	}
+	
+	#home-page p{
+		top:200px;
+		font-size: 20px;
+		text-align: center;
+		margin-top: 0;
+		margin-bottom: 0;
+		color: white;
+	}
+
+	.order-button{
+		background-color: brown;
+		border: 2px solid white;
+		font-size: 18px;
+		padding: 8px 20px;
+		margin-top: 20px;
+		color: white;
+		border-radius: 15px;
+		cursor: pointer;
+	}
+	.services-heading{
+		padding:20px;
+		text-align: center;
+		margin-top: 148px;
+		margin-bottom: -10px;
+	
+	}
+
+	#our-services{
+		display: flex;
+		margin:20px 25px;
+	}
+
+	.service-boxes{
+		padding: 30px;
+		margin: 20px;
+		border:1px solid brown;
+		border-radius: 25px;
+		background-color: rgb(239, 235, 235);
+
+	}
+	.service-boxes img{
+		height: 100px;
+		margin:auto;
+		display: block;
+	}
+
+	.food-catering{
+		font-size: 25px;
+		text-align: center;
+		margin-bottom: 0;
+
+	}
+	#our-services p{
+		text-align: center;
+	}
+
+
+
+	
+	.clients-heading{
+		text-align: center;
+		padding: 30px 20px 10px 20px;
+		opacity: 1;
+	}
+
+	#our-clients{
+		height: 350px;
+		position: relative;
+
+	}
+	#clients-details{
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		
+	}
+
+	.clients-items{
+		padding: 35px;
+		z-index: -3;
+	}
+
+	#clients-details img{
+		height: 80px;
+	}
+
+	#our-clients::before{
+		content: "";
+		position: absolute;
+		background-image: url("assets/bg.jpg");
+		width: 100%;
+		height: 106%;
+		background-repeat: no-repeat;
+		opacity: 0.3;
+		z-index: -2;
+
+	}
+
+
+
+	#contact-us{
+		position: relative;
+	}
+
+	#contact-us::before{
+		content: "";
+		position: absolute;
+		background-image: url("assets/contact.jpg");
+		background-size: 100% 100%;
+		width: 100%;
+		height: 100%;
+		z-index:-1;
+		opacity: 0.5;
+	}
+	.contact-heading{
+		text-align: center;
+		padding: 30px 20px 10px 20px;
+	}
+
+	#contact-box{
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		padding: 35px;
+		font-size: 23px;
+
+	}
+
+	#contact-box input{
+		border-radius: 8px;
+	}
+
+	#contact-box input,
+	#contact-box textarea{
+		width: 100%;
+		padding: 10px;
+		font-size: 15px;
+		border: 1px solid black;
+
+
+	}
+
+	#contact-box form{
+		width: 40%;
+
+	}
+	#contact-box-label{
+		font-size: 20px;
+	}
+
+	.submit{
+		background-color: brown;
+		border:2px soild white;
+		color: white;
+		padding: 5px 30px;
+		font-size: 20px;
+		width: 125px;
+		margin-top: 20px;
+		border-radius: 8px;
+		cursor: pointer;
+	
+	}
+	
+	.footer-part{
+		background-color: black;
+		color: white;
+		padding: 10px 15px;
+		text-align: center;
+	}
+
+
+/* Media queries*/
+
+	@media (max-width:1170px){
+		.navigation-bar{
+			flex-direction: column;
+		}
+		#home-page{
+			height: 690px;
+			padding: 10px 50px;
+
+		}
+		#home-page::before{
+			
+			background-size: 100% 900px;
+			height: 840px;
+			
+		}	
+		#home-page p{
+			font-size: 25px;
+
+		}
+		.welcome-heading{
+			font-size: 50px;
+		}
+		
+		#our-services{
+			flex-direction: column;
+			height: auto;
+			width: auto;
+			
+		}
+		.services-heading{
+			font-size: 40px;
+		}
+		.service-boxes{
+			padding: 15px;
+			margin: 15px 50px;
+			margin-bottom: 20px;
+
+		}
+		.service-boxes h2{
+			font-size: 20px;
+		}
+		.service-boxes p{
+			font-size: 15px;
+		}
+		.service-boxes img{
+			height: 150px;
+	
+		}
+		.food-catering {
+			font-size: 20px;
+		}
+
+		
+		.order-button{
+			font-size: 23px;
+			padding:6px 20px;
+		
+		}
+		.contact-heading {
+			font-size: 40px;
+		}
+
+		#contact-box form {
+			width: 60%;
+		}
+		.clients-heading{
+			margin: 20px;
+			font-size: 40px;
+		}
+		.submit {
+			width:104%;
+		}
+	}
